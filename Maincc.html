@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Runtime Terror</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: url('/static/cyber_security.png.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Optional: dark overlay for better readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+            z-index: -1;
+        }
+
+        h1 {
+            color: #00ffff;
+            font-size: 48px;
+            margin-top: 40px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .title-sub {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 3px #000000;
+        }
+
+        .container {
+            margin-top: 30px;
+            padding: 30px 40px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 2px solid #00ffff;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+        }
+
+        input[type="file"] {
+            margin: 15px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+
+        input[type="submit"] {
+            background-color: #00ffcc;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: 'Orbitron', sans-serif;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00ccaa;
+        }
+
+        .watermark {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #cccccc;
+            font-family: Arial, sans-serif;
+            text-shadow: 1px 1px 2px #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>RUNTIME TERROR</h1>
+    <div class="title-sub">DDOS Attack Prediction</div>
+
+    <form class="container" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    </div>
+</body>
+</html>

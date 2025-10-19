@@ -1,0 +1,80 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: url('/static/cyber_security.png.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        h2 {
+            color: #00ffff;
+            margin-top: 30px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .table-container {
+            margin: 30px auto;
+            width: 90%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #ffffff;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #00ffff;
+        }
+
+        th {
+            background-color: #003f5c;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Prediction Results</h2>
+    <div class="table-container">
+        {{ table|safe }}
+    </div>
+    <a href="/">⬅ Back to Upload</a>
+</body>
+</html>
